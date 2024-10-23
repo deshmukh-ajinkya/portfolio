@@ -1,0 +1,103 @@
+/* App.css */
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 20% 50% 30%;
+  height: 100vh;
+}
+
+.header {
+  background-color: #0c0ca0;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.info p {
+  margin: 4px 0;
+}
+
+.photo img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* Skill Section */
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 skills per row */
+  grid-template-rows: repeat(4, 1fr); /* 8 skills per row */
+  gap: 12px;
+  padding: 12px;
+  overflow-y: scroll;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skill img {
+  width: 36px;
+}
+
+.skill p {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  overflow-x: scroll;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-rows: auto auto auto;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .photo img {
+    width: 100px;
+  }
+
+  .skill-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 skills per row for smaller screens */
+  }
+
+  .skill {
+    padding: 16px;
+  }
+
+  .skill img {
+    width: 50px;
+  }
+
+  .footer {
+    padding: 16px;
+  }
+}
