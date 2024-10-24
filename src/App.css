@@ -34,7 +34,7 @@ body {
 .skill-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 12px;
   padding: 12px;
   overflow-y: scroll;
