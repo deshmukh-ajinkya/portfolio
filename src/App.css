@@ -33,11 +33,12 @@ body {
 /* Skill Section */
 .skill-container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr); /* 8 skills per row */
-  grid-template-rows: repeat(4, 1fr); /* 8 skills per row */
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 12px;
   padding: 12px;
   overflow-y: scroll;
+  scrollbar-width: 0;
 }
 
 .skill {
@@ -58,11 +59,12 @@ body {
 }
 
 .footer {
-  background-color: blue;
+  background-color: #0c0ca0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 12px;
+  gap: 12px;
   overflow-x: scroll;
 }
 
