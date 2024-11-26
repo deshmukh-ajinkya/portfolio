@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+#navigation-container {
+  background-color: #00d2cf;
+  color: white;
+  padding: 12px;
+  justify-items: center;
+}
+
+#name {
+  padding-top: 12px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+#profile-pic {
+  width: 150px;
+  height: auto;
+  margin-block: 12px;
+}
+
+#link-container {
+  margin-left: auto;
+  padding-left: 12px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  padding-block: 4px;
+}
+
+.link-icon {
+  width: 36px;
+  padding-right: 4px;
+}
+
+.link-text {
+  font-size: large;
+  text-decoration: none;
+  color: white;
+}
+
+#download-resume {
+  background-color: white;
+  color: #00d2cf;
+  padding-inline: 24px;
+  padding-block: 8px;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 24px;
+  left: 36px;
+  cursor: pointer;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: black;
+  padding: 24px;
+  overflow-y: auto; /* Enable vertical scrolling on overflow */
+}
+
+#contact-container {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 28px;
+  padding-right: 8px;
+}
+
+.contact-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+#summary-container {
+  background-color: #f6f6f6;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#skill {
+  padding-inline: 24px;
+}
+
+#skill-container {
+  padding-top: 12px;
+  display: grid;
+  gap: 24px; /* Spacing between items */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: center; /* Center the grid items */
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.skill-icon {
+  width: 48px;
+}
+
+#work-history {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.company-name {
+  padding-top: 12px;
+  font-size: large;
+  font-weight: 600;
+  color: #01aeac;
+}
+
+.company-experience {
+  font-weight: 600;
+}
+
+.project {
+  display: flex;
+}
+
+.project-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-link-icon {
+  width: 24px;
+  align-items: center;
+}
+
+.project-link-text {
+  text-decoration: none;
+  color: black;
+}
+
+#project-item-wrapper {
+  display: flex; /* Arrange items in a row */
+  flex-wrap: nowrap; /* Prevent wrapping to a new line */
+  overflow-x: auto; /* Enable horizontal scrolling on overflow */
+  gap: 16px; /* Space between project items */
+  padding-block: 12px; /* Optional padding for aesthetics */
+  scrollbar-width: 0px;
+}
+
+.project-item {
+  flex: 0 0 auto; /* Prevent items from shrinking or growing */
+  width: 320px; /* Set a consistent width for project items */
+}
+
+.project-name {
+  padding-bottom: 12px;
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+  #root {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #download-resume {
+    position: static;
+    font-size: small;
+    padding-block: 4px;
+  }
+  #link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+  #profile-pic {
+    width: 60px;
+  }
+  .link-icon {
+    width: 24px;
+  }
+  .link-text {
+    font-size: 14px;
+  }
+  #contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-item {
+    width: 200px;
+  }
+  .project-video {
+    width: 200px;
+    height: 160px;
+  }
+  #profile-pic {
+    margin-block: 4px;
+  }
+}
