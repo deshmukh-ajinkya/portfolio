@@ -189,3 +189,45 @@
   padding-bottom: 12px;
   font-size: large;
 }
+
+@media (max-width: 768px) {
+  #root {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #download-resume {
+    position: static;
+    font-size: small;
+    padding-block: 4px;
+  }
+  #link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+  #profile-pic {
+    width: 60px;
+  }
+  .link-icon {
+    width: 24px;
+  }
+  .link-text {
+    font-size: 14px;
+  }
+  #contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-item {
+    width: 200px;
+  }
+  .project-video {
+    width: 200px;
+    height: 160px;
+  }
+  #profile-pic {
+    margin-block: 4px;
+  }
+}
