@@ -39,11 +39,195 @@
           </div>
           <div class="contact-wrapper">
             <img class="contact-icon" src="./assets/linkedin.png" />
-            <a class="contact-text">LinkedIn</a>
+            <a
+              class="contact-text"
+              href="http://www.linkedin.com/in/ajinkya-deshmukh-mern-stack-developer"
+              target="_blank"
+              >LinkedIn</a
+            >
           </div>
         </div>
-        <div id="summary-container"></div>
+        <div id="summary-container">
+          <h2>MERN Stack Engineer</h2>
+          <p>
+            I'm MERN Stack developer with Frontend proficiency and Skilled in
+            Backend to create high performance, cross-platform solutions with
+            clean, maintainable code.<br />
+            Proficient in React.js with modern front-end development practices,
+            including component-based architecture, state management with Redux,
+            React Hooks, Context API, and Material UI with responsive user
+            interfaces.<br />
+            Skilled in integrating REST APIs to ensure seamless user
+            experiences.<br />
+            Familiar with Node.js and its ecosystem for building APIs.<br />
+            Adept at debugging, optimizing, and delivering high-quality code in
+            agile & fast-paced environments.
+          </p>
+        </div>
+        <div id="skill">
+          <h2>Technical Skills</h2>
+          <div id="skill-container"></div>
+        </div>
+        <div id="work-history">
+          <h2>Work History</h2>
+          <p class="company-name">Konverge.AI</p>
+          <p class="company-experience">September 2021 - September - 2023</p>
+          <p class="company-work">
+            <li>
+              Led a proof of concept to acquire a new client for the
+              organization.
+            </li>
+            <li>
+              Developed scalable, reusable code using React.js, and implemented
+              state management solutions with Redux for an enterprise-level web
+              application.
+            </li>
+            <li>
+              Implemented performance optimization techniques, including lazy
+              loading and code splitting, resulting in a 30% improvement in
+              application performance by reducing initial load time.
+            </li>
+            <li>
+              Utilized Material-UI to deliver consistent design patterns across
+              the application, leading to a 25% reduction in UI development
+              time.
+            </li>
+            <li>
+              Collaborated closely with the back-end team to integrate REST APIs
+              efficiently.
+            </li>
+            <li>
+              Refactored legacy code, which improved application maintainability
+              and readability.
+            </li>
+          </p>
+        </div>
+        <div id="project">
+          <h2>Projects</h2>
+          <div id="project-item-wrapper">
+            <div class="project-item">
+              <p class="project-name">Quickblog</p>
+              <video class="project-video" width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4" />
+              </video>
+              <div class="project-footer">
+                <div class="project-link-wrapper">
+                  <img
+                    class="project-link-icon"
+                    src="./assets/github-shortcut.png"
+                    alt="GitHub"
+                  />
+                  <a class="project-link-text" href="#">Code</a>
+                </div>
+                <div class="project-link-wrapper">
+                  <img
+                    class="project-link-icon"
+                    src="./assets/shortcut.png"
+                    alt="Visit"
+                  />
+                  <a class="project-link-text" href="#">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <p class="project-name">Package Analyzer</p>
+              <video class="project-video" width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4" />
+              </video>
+              <div class="project-footer">
+                <div class="project-link-wrapper">
+                  <img
+                    class="project-link-icon"
+                    src="./assets/github-shortcut.png"
+                    alt="GitHub"
+                  />
+                  <a class="project-link-text" href="#">Code</a>
+                </div>
+                <div class="project-link-wrapper">
+                  <img
+                    class="project-link-icon"
+                    src="./assets/shortcut.png"
+                    alt="Visit"
+                  />
+                  <a class="project-link-text" href="#">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <p class="project-name">React Kickstart</p>
+              <video class="project-video" width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4" />
+              </video>
+              <div class="project-footer">
+                <div class="project-link-wrapper">
+                  <img
+                    class="project-link-icon"
+                    src="./assets/github-shortcut.png"
+                    alt="GitHub"
+                  />
+                  <a class="project-link-text" href="#">Code</a>
+                </div>
+                <div class="project-link-wrapper">
+                  <img
+                    class="project-link-icon"
+                    src="./assets/shortcut.png"
+                    alt="Visit"
+                  />
+                  <a class="project-link-text" href="#">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script>
+      // Array of skills
+      const skills = [
+        { name: "Linux", icon: "./assets/linux.png" },
+        { name: "Html", icon: "./assets/html.png" },
+        { name: "Css", icon: "./assets/css.png" },
+        { name: "JavaScript/ES6+", icon: "./assets/js.png" },
+        { name: "TypeScript", icon: "./assets/ts.png" },
+        { name: "DOM", icon: "./assets/dom.png" },
+        { name: "React.js", icon: "./assets/react.png" },
+        { name: "Next.js", icon: "./assets/nextjs.png" },
+        { name: "Redux", icon: "./assets/redux.png" },
+        { name: "React Router", icon: "./assets/router.png" },
+        { name: "Material UI", icon: "./assets/mui.png" },
+        { name: "Chart.js", icon: "./assets/chartjs.png" },
+        { name: "Node.js", icon: "./assets/node.png" },
+        { name: "Express.js", icon: "./assets/express.png" },
+        { name: "MongoDB", icon: "./assets/mongodb.png" },
+        { name: "Mongoose", icon: "./assets/mongoose.png" },
+        { name: "Jest", icon: "./assets/jest.png" },
+        { name: "Postman", icon: "./assets/postman.png" },
+        { name: "Jira", icon: "./assets/jira.png" },
+        { name: "Git", icon: "./assets/git.png" },
+        { name: "Bitbucket", icon: "./assets/bitbucket.png" },
+        { name: "Docker", icon: "./assets/docker.png" },
+        { name: "AWS", icon: "./assets/aws.png" },
+      ];
+
+      // Reference to the skill container
+      const skillContainer = document.getElementById("skill-container");
+
+      // Render each skill
+      skills.forEach((skill) => {
+        const skillWrapper = document.createElement("div");
+        skillWrapper.className = "skill-wrapper";
+
+        const skillIcon = document.createElement("img");
+        skillIcon.className = "skill-icon";
+        skillIcon.src = skill.icon;
+
+        const skillName = document.createElement("p");
+        skillName.textContent = skill.name;
+
+        skillWrapper.appendChild(skillIcon);
+        skillWrapper.appendChild(skillName);
+        skillContainer.appendChild(skillWrapper);
+      });
+    </script>
   </body>
 </html>

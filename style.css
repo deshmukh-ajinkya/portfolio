@@ -63,8 +63,12 @@
 }
 
 #content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   color: black;
   padding: 24px;
+  overflow-y: auto; /* Enable vertical scrolling on overflow */
 }
 
 #contact-container {
@@ -78,11 +82,110 @@
 }
 
 .contact-icon {
-  width: 36px;
+  width: 28px;
   padding-right: 8px;
 }
 
 .contact-text {
   font-size: 18px;
   font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+#summary-container {
+  background-color: #f6f6f6;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#skill {
+  padding-inline: 24px;
+}
+
+#skill-container {
+  padding-top: 12px;
+  display: grid;
+  gap: 24px; /* Spacing between items */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: center; /* Center the grid items */
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.skill-icon {
+  width: 48px;
+}
+
+#work-history {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.company-name {
+  padding-top: 12px;
+  font-size: large;
+  font-weight: 600;
+  color: #01aeac;
+}
+
+.company-experience {
+  font-weight: 600;
+}
+
+.project {
+  display: flex;
+}
+
+.project-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-link-icon {
+  width: 24px;
+  align-items: center;
+}
+
+.project-link-text {
+  text-decoration: none;
+  color: black;
+}
+
+#project-item-wrapper {
+  display: flex; /* Arrange items in a row */
+  flex-wrap: nowrap; /* Prevent wrapping to a new line */
+  overflow-x: auto; /* Enable horizontal scrolling on overflow */
+  gap: 16px; /* Space between project items */
+  padding-block: 12px; /* Optional padding for aesthetics */
+  scrollbar-width: 0px;
+}
+
+.project-item {
+  flex: 0 0 auto; /* Prevent items from shrinking or growing */
+  width: 320px; /* Set a consistent width for project items */
+}
+
+.project-name {
+  padding-bottom: 12px;
+  font-size: large;
 }
