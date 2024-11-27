@@ -1,4 +1,9 @@
 * {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   margin: 0;
   padding: 0;
 }
@@ -128,6 +133,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding-inline: 24px;
 }
 
 .company-name {
@@ -141,8 +147,8 @@
   font-weight: 600;
 }
 
-.project {
-  display: flex;
+#project {
+  padding-inline: 24px;
 }
 
 .project-item-wrapper {
