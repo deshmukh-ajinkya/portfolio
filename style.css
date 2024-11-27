@@ -90,7 +90,7 @@
   font-size: 18px;
   font-weight: 600;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #summary-container {
@@ -161,6 +161,10 @@
   align-items: center;
 }
 
+.project-link {
+  text-decoration: none;
+}
+
 .project-link-icon {
   width: 24px;
   align-items: center;
@@ -229,5 +233,8 @@
   }
   #profile-pic {
     margin-block: 4px;
+  }
+  .company-work-content {
+    text-decoration: none;
   }
 }
