@@ -57,7 +57,7 @@
 
 #download-resume {
   background-color: white;
-  color: #00d2cf;
+  color: #000000;
   padding-inline: 24px;
   padding-block: 8px;
   border-radius: 24px;
@@ -65,6 +65,7 @@
   bottom: 24px;
   left: 36px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #content-container {
