@@ -81,11 +81,13 @@
 #contact-container {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .contact-wrapper {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 .contact-icon {
