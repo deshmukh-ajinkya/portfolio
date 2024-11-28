@@ -1,293 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet" />
-    <title>Portfolio - Ajinkya Deshmukh</title>
-  </head>
-  <body>
-    <div id="root">
-      <div id="navigation-container">
-        <p id="name">Ajinkya Deshmukh</p>
-        <img id="profile-pic" src="./assets/profile.png" alt="profile-pic" />
-        <div id="link-container">
-          <div class="links">
-            <img class="link-icon" src="./assets/about.png" />
-            <a class="link-text" href="#">About</a>
-          </div>
-          <div class="links">
-            <img class="link-icon" src="./assets/history.png" />
-            <a class="link-text" href="#">Work History</a>
-          </div>
-          <div class="links">
-            <img class="link-icon" src="./assets/github.png" />
-            <a class="link-text" href="#">Project</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <title>Portfolio - Ajinkya Deshmukh</title>
+</head>
+
+<body>
+  <div id="root">
+    <div id="navigation-container">
+      <p id="name">Ajinkya Deshmukh</p>
+      <img id="profile-pic" src="./assets/me.jpeg" alt="profile-pic" />
+      <div id="link-container">
+        <div class="links">
+          <img class="link-icon" src="./assets/about.png" />
+          <a class="link-text" href="#">About</a>
         </div>
-        <a
-          target="_blank"
-          href="https://drive.google.com/file/d/1RlQgeEeNnT_hTu1gJw_u0bEi69qHoXty/view?usp=sharing"
-          id="download-resume"
-          >Download Resume</a
-        >
-      </div>
-      <div id="content-container">
-        <div id="contact-container">
-          <div class="contact-wrapper">
-            <img class="contact-icon" src="./assets/email.png" />
-            <p class="contact-text">deshmukhasb@gmail.com</p>
-          </div>
-          <div class="contact-wrapper">
-            <img class="contact-icon" src="./assets/whatsapp.png" />
-            <p class="contact-text">+91-9730664391</p>
-          </div>
-          <div class="contact-wrapper">
-            <img class="contact-icon" src="./assets/linkedin.png" />
-            <a
-              class="contact-text"
-              href="http://www.linkedin.com/in/ajinkya-deshmukh-mern-stack-developer"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </div>
+        <div class="links">
+          <img class="link-icon" src="./assets/history.png" />
+          <a class="link-text" href="#">Work History</a>
         </div>
-        <div id="summary-container">
-          <h2>MERN Stack Engineer</h2>
-          <p>
-            I'm MERN Stack developer with Frontend proficiency and Skilled in
-            Backend to create high performance, cross-platform solutions with
-            clean, maintainable code.<br />
-            Proficient in React.js with modern front-end development practices,
-            including component-based architecture, state management with Redux,
-            React Hooks, Context API, and Material UI with responsive user
-            interfaces.<br />
-            Skilled in integrating REST APIs to ensure seamless user
-            experiences.<br />
-            Familiar with Node.js and its ecosystem for building APIs.<br />
-            Adept at debugging, optimizing, and delivering high-quality code in
-            agile & fast-paced environments.
-          </p>
-        </div>
-        <div id="skill">
-          <h2>Technical Skills</h2>
-          <div id="skill-container"></div>
-        </div>
-        <div id="work-history">
-          <h2>Work History</h2>
-          <p class="company-name">Konverge.AI</p>
-          <p class="company-experience">September 2021 - September - 2023</p>
-          <p class="company-work">
-            <li>
-              Led a proof of concept to acquire a new client for the
-              organization.
-            </li>
-            <li>
-              Developed scalable, reusable code using React.js, and implemented
-              state management solutions with Redux for an enterprise-level web
-              application.
-            </li>
-            <li>
-              Implemented performance optimization techniques, including lazy
-              loading and code splitting, resulting in a 30% improvement in
-              application performance by reducing initial load time.
-            </li>
-            <li>
-              Utilized Material-UI to deliver consistent design patterns across
-              the application, leading to a 25% reduction in UI development
-              time.
-            </li>
-            <li>
-              Collaborated closely with the back-end team to integrate REST APIs
-              efficiently.
-            </li>
-            <li>
-              Refactored legacy code, which improved application maintainability
-              and readability.
-            </li>
-          </p>
-        </div>
-        <div id="project">
-          <h2>Personal Projects</h2>
-          <div id="project-item-wrapper">
-            <div class="project-item">
-              <p class="project-name">Quickblog</p>
-              <video class="project-video" width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4" />
-              </video>
-              <div class="project-footer">
-                <div class="project-link-wrapper">
-                  <img
-                    class="project-link-icon"
-                    src="./assets/github-shortcut.png"
-                    alt="GitHub"
-                  />
-                  <a
-                    class="project-link-text"
-                    target="_blank"
-                    href="https://github.com/deshmukh-ajinkya/quickblog-client"
-                    >Code</a
-                  >
-                </div>
-                <div class="project-link-wrapper">
-                  <img
-                    class="project-link-icon"
-                    src="./assets/shortcut.png"
-                    alt="Visit"
-                  />
-                  <a
-                    class="project-link-text"
-                    target="_blank"
-                    href="https://quickblog-taupe.vercel.app/dashboard"
-                    >Visit</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-item">
-              <p class="project-name">Package Analyzer</p>
-              <video class="project-video" width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4" />
-              </video>
-              <div class="project-footer">
-                <div class="project-link-wrapper">
-                  <img
-                    class="project-link-icon"
-                    src="./assets/github-shortcut.png"
-                    alt="GitHub"
-                  />
-                  <a
-                    class="project-link-text"
-                    target="_blank"
-                    href="https://github.com/deshmukh-ajinkya/packageanalyzer"
-                    >Code</a
-                  >
-                </div>
-                <div class="project-link-wrapper">
-                  <img
-                    class="project-link-icon"
-                    src="./assets/shortcut.png"
-                    alt="Visit"
-                  />
-                  <a
-                    class="project-link-text"
-                    target="_blank"
-                    href="https://deshmukh-ajinkya.github.io/packageanalyzer/"
-                    >Visit</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-item">
-              <p class="project-name">ReactBasekit</p>
-              <video class="project-video" width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4" />
-              </video>
-              <div class="project-footer">
-                <div class="project-link-wrapper">
-                  <img
-                    class="project-link-icon"
-                    src="./assets/github-shortcut.png"
-                    alt="GitHub"
-                  />
-                  <a
-                    class="project-link-text"
-                    target="_blank"
-                    href="https://github.com/deshmukh-ajinkya/reactbasekit"
-                    >Code</a
-                  >
-                </div>
-                <div class="project-link-wrapper">
-                  <img
-                    class="project-link-icon"
-                    src="./assets/shortcut.png"
-                    alt="Visit"
-                  />
-                  <a
-                    class="project-link-text"
-                    target="_blank"
-                    href="https://deshmukh-ajinkya.github.io/reactbasekit"
-                    >Visit</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="links">
+          <img class="link-icon" src="./assets/github.png" />
+          <a class="link-text" href="#">Project</a>
         </div>
       </div>
+      <a target="_blank" href="https://drive.google.com/file/d/1KP8JJL-735rhgKqDAfD8jtYenr_kshz5/view?usp=sharing"
+        id="download-resume">Download Resume</a>
     </div>
-    <script>
-      // Array of skills
-      const skills = [
-        { name: "Linux", icon: "./assets/linux.png" },
-        { name: "Html", icon: "./assets/html.png" },
-        { name: "Css", icon: "./assets/css.png" },
-        { name: "JavaScript/ES6+", icon: "./assets/js.png" },
-        { name: "TypeScript", icon: "./assets/ts.png" },
-        { name: "DOM", icon: "./assets/dom.png" },
-        { name: "React.js", icon: "./assets/react.png" },
-        { name: "Next.js", icon: "./assets/nextjs.png" },
-        { name: "Redux", icon: "./assets/redux.png" },
-        { name: "React Router", icon: "./assets/router.png" },
-        { name: "Material UI", icon: "./assets/mui.png" },
-        { name: "Chart.js", icon: "./assets/chartjs.png" },
-        { name: "Node.js", icon: "./assets/node.png" },
-        { name: "Express.js", icon: "./assets/express.png" },
-        { name: "MongoDB", icon: "./assets/mongodb.png" },
-        { name: "Mongoose", icon: "./assets/mongoose.png" },
-        { name: "Jest", icon: "./assets/jest.png" },
-        { name: "Postman", icon: "./assets/postman.png" },
-        { name: "Jira", icon: "./assets/jira.png" },
-        { name: "Git", icon: "./assets/git.png" },
-        { name: "Bitbucket", icon: "./assets/bitbucket.png" },
-        { name: "Docker", icon: "./assets/docker.png" },
-        { name: "AWS", icon: "./assets/aws.png" },
-      ];
+    <div id="content-container">
+      <div id="contact-container">
+        <div class="contact-wrapper">
+          <img class="contact-icon" src="./assets/email.png" />
+          <p class="contact-text">deshmukhasb@gmail.com</p>
+        </div>
+        <div class="contact-wrapper">
+          <img class="contact-icon" src="./assets/whatsapp.png" />
+          <p class="contact-text">+91-9730664391</p>
+        </div>
+        <div class="contact-wrapper">
+          <img class="contact-icon" src="./assets/linkedin.png" />
+          <a class="contact-text" href="http://www.linkedin.com/in/ajinkya-deshmukh-mern-stack-developer"
+            target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div id="summary-container">
+        <h2>MERN Stack Developer</h2>
+        <p>
+          I'm MERN Stack developer with Frontend proficiency and Skilled in
+          Backend to create high performance, cross-platform solutions with
+          clean, maintainable code.<br />
+          Proficient in React.js with modern front-end development practices,
+          including component-based architecture, state management with Redux,
+          React Hooks, Context API, and Material UI with responsive user
+          interfaces.<br />
+          Skilled in integrating REST APIs to ensure seamless user
+          experiences.<br />
+          Familiar with Node.js and its ecosystem for building APIs.<br />
+          Adept at debugging, optimizing, and delivering high-quality code in
+          agile & fast-paced environments.
+        </p>
+      </div>
+      <div id="skill">
+        <h2>Technical Skills</h2>
+        <div id="skill-container"></div>
+      </div>
+      <div id="work-history">
+        <h2>Work History</h2>
+        <p class="company-name">Konverge.AI</p>
+        <p class="company-experience">September 2021 - September - 2023</p>
+        <p class="company-work">
+        <p class="company-work-content">
+          Led a proof of concept to acquire a new client for the
+          organization.
+        </p>
+        <p class="company-work-content">
+          Developed scalable, reusable code using React.js, and implemented
+          state management solutions with Redux for an enterprise-level web
+          application.
+        </p>
+        <p class="company-work-content">
+          Implemented performance optimization techniques, including lazy
+          loading and code splitting, resulting in a 30% improvement in
+          application performance by reducing initial load time.
+        </p>
+        <p class="company-work-content">
+          Utilized Material-UI to deliver consistent design patterns across
+          the application, leading to a 25% reduction in UI development
+          time.
+        </p>
+        <p class="company-work-content">
+          Collaborated closely with the back-end team to integrate REST APIs
+          efficiently.
+        </p>
+        <p class="company-work-content">
+          Refactored legacy code, which improved application maintainability
+          and readability.
+        </p>
+        </p>
+      </div>
+      <div id="project">
+        <h2>Personal Projects</h2>
+        <div id="project-item-wrapper">
+          <div class="project-item">
+            <p class="project-name">Quickblog</p>
+            <video class="project-video" width="320" height="240" controls>
+              <source src="./assets/quickblog.mp4" type="video/mp4" />
+            </video>
+            <div class="project-footer">
+              <div class="project-link-wrapper">
+                <img class="project-link-icon" src="./assets/github-shortcut.png" alt="GitHub" />
+                <a class="project-link-text" target="_blank"
+                  href="https://github.com/deshmukh-ajinkya/quickblog-client">Code</a>
+              </div>
+              <div class="project-link-wrapper">
+                <img class="project-link-icon" src="./assets/shortcut.png" alt="Visit" />
+                <a class="project-link-text" target="_blank"
+                  href="https://quickblog-taupe.vercel.app/dashboard">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <p class="project-name">Package Analyzer</p>
+            <video class="project-video" width="320" height="240" controls>
+              <source src="./assets/packageanalyzer.mp4" type="video/mp4" />
+            </video>
+            <div class="project-footer">
+              <div class="project-link-wrapper">
+                <img class="project-link-icon" src="./assets/github-shortcut.png" alt="GitHub" />
+                <a class="project-link-text" target="_blank"
+                  href="https://github.com/deshmukh-ajinkya/packageanalyzer">Code</a>
+              </div>
+              <div class="project-link-wrapper">
+                <img class="project-link-icon" src="./assets/shortcut.png" alt="Visit" />
+                <a class="project-link-text" target="_blank"
+                  href="https://deshmukh-ajinkya.github.io/packageanalyzer/">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <p class="project-name">ReactBasekit</p>
+            <video class="project-video" width="320" height="240" controls>
+              <source src="./assets/reactbasekit.mp4" type="video/mp4" />
+            </video>
+            <div class="project-footer">
+              <div class="project-link-wrapper">
+                <img class="project-link-icon" src="./assets/github-shortcut.png" alt="GitHub" />
+                <a class="project-link-text" target="_blank"
+                  href="https://github.com/deshmukh-ajinkya/reactbasekit">Code</a>
+              </div>
+              <div class="project-link-wrapper">
+                <img class="project-link-icon" src="./assets/shortcut.png" alt="Visit" />
+                <a class="project-link-text" target="_blank"
+                  href="https://deshmukh-ajinkya.github.io/reactbasekit">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Note: QuickBlog is not hosted online, so visiting the app will provide an overview and allow you to explore a static version. For a complete demonstration of its features, please watch the video.</p>
+    </div>
+  </div>
+  <script>
+    // Array of skills
+    const skills = [
+      { name: "Linux", icon: "./assets/linux.png" },
+      { name: "Html", icon: "./assets/html.png" },
+      { name: "Css", icon: "./assets/css.png" },
+      { name: "JavaScript", icon: "./assets/js.png" },
+      { name: "ES6+", icon: "./assets/ecma.png" },
+      { name: "TypeScript", icon: "./assets/ts.png" },
+      { name: "DOM", icon: "./assets/dom.png" },
+      { name: "React.js", icon: "./assets/react.png" },
+      { name: "Next.js", icon: "./assets/nextjs.png" },
+      { name: "Redux", icon: "./assets/redux.png" },
+      { name: "React Router", icon: "./assets/router.png" },
+      { name: "Axios", icon: "./assets/axios.png" },
+      { name: "React Query", icon: "./assets/query.png" },
+      { name: "Material UI", icon: "./assets/mui.png" },
+      { name: "Chart.js", icon: "./assets/chartjs.png" },
+      { name: "Node.js", icon: "./assets/node.png" },
+      { name: "Express.js", icon: "./assets/express.png" },
+      { name: "MongoDB", icon: "./assets/mongodb.png" },
+      { name: "Mongoose", icon: "./assets/mongoose.png" },
+      { name: "Jest", icon: "./assets/jest.png" },
+      { name: "Postman", icon: "./assets/postman.png" },
+      { name: "Jira", icon: "./assets/jira.png" },
+      { name: "Git", icon: "./assets/git.png" },
+      { name: "Github", icon: "./assets/gh.png" },
+      { name: "Bitbucket", icon: "./assets/bitbucket.png" },
+      { name: "Docker", icon: "./assets/docker.png" },
+      { name: "AWS", icon: "./assets/aws.png" },
+    ];
 
-      // Reference to the skill container
-      const skillContainer = document.getElementById("skill-container");
+    // Reference to the skill container
+    const skillContainer = document.getElementById("skill-container");
 
-      // Render each skill
-      skills.forEach((skill) => {
-        const skillWrapper = document.createElement("div");
-        skillWrapper.className = "skill-wrapper";
+    // Render each skill
+    skills.forEach((skill) => {
+      const skillWrapper = document.createElement("div");
+      skillWrapper.className = "skill-wrapper";
 
-        const skillIcon = document.createElement("img");
-        skillIcon.className = "skill-icon";
-        skillIcon.src = skill.icon;
+      const skillIcon = document.createElement("img");
+      skillIcon.className = "skill-icon";
+      skillIcon.src = skill.icon;
 
-        const skillName = document.createElement("p");
-        skillName.textContent = skill.name;
+      const skillName = document.createElement("p");
+      skillName.textContent = skill.name;
 
-        skillWrapper.appendChild(skillIcon);
-        skillWrapper.appendChild(skillName);
-        skillContainer.appendChild(skillWrapper);
+      skillWrapper.appendChild(skillIcon);
+      skillWrapper.appendChild(skillName);
+      skillContainer.appendChild(skillWrapper);
+    });
+  </script>
+  <script>
+    // Add click event listeners for the navigation links
+    document.querySelectorAll(".link-text").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        const text = e.target.textContent; // Get the text of the link
+
+        // Determine which section to scroll to
+        let targetId;
+        if (text === "Project") {
+          targetId = "project";
+        } else if (text === "Work History") {
+          targetId = "work-history";
+        } else if (text === "About") {
+          targetId = "contact-container"; // Scroll to the contact-container section
+        }
+
+        // Scroll to the target section
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
       });
-    </script>
-    <script>
-      // Add click event listeners for the navigation links
-      document.querySelectorAll(".link-text").forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault(); // Prevent default anchor behavior
-          const text = e.target.textContent; // Get the text of the link
+    });
+  </script>
+</body>
 
-          // Determine which section to scroll to
-          let targetId;
-          if (text === "Project") {
-            targetId = "project";
-          } else if (text === "Work History") {
-            targetId = "work-history";
-          } else if (text === "About") {
-            targetId = "contact-container"; // Scroll to the contact-container section
-          }
-
-          // Scroll to the target section
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-    </script>
-  </body>
 </html>
