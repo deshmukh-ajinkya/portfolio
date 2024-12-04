@@ -191,7 +191,7 @@
   overflow-x: auto; /* Enable horizontal scrolling on overflow */
   gap: 16px; /* Space between project items */
   padding-block: 12px; /* Optional padding for aesthetics */
-  scrollbar-width: 0px;
+  scrollbar-width: thin;
 }
 
 .project-item {
